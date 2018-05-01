@@ -6,7 +6,7 @@
 
 # URL base for various Nominatim operations
 lookup_base <- "http://nominatim.openstreetmap.org/lookup"
-reverse_base <- "http://us1.locationiq.org/v1/reverse.php"
+reverse_base <- "https://us1.locationiq.org/v1/reverse.php"
 search_base <- "https://us1.locationiq.org/v1/search.php"
 
 .onAttach <- function(libname, pkgname) {
