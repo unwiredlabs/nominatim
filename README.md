@@ -7,9 +7,8 @@ From the wiki:
 
 > Nominatim (from the Latin, 'by name') is a tool to search OSM data by name and address and to generate synthetic addresses of OSM points (reverse geocoding). It can be found at nominatim.openstreetmap.org.
 >
-> Nominatim is also used as one of the sources for the search box on the OpenStreetMap home page. Several companies provide hosted instances of Nominatim that you can query via an API, for example see MapQuest Open Initiative, PickPoint or the OpenCage Geocoder.
 
-Most functions hit the [MapQuest Nominatim API](http://open.mapquestapi.com/nominatim/) as recommended by OpenStreetMap.
+Most functions hit the [LocationIQ Nominatim API](https://locationiq.org/) which offers a blazing fast geocoder with generous free requests for developers.
 
 The following functions are implemented:
 
@@ -31,20 +30,14 @@ The following functions are implemented:
 
 ### NOTE
 
+-   You'll need a developer key (set the key in this option: OSM_API_KEY) by signing up here: <http://locationiq.org/>
 -   Data © OpenStreetMap contributors, ODbL 1.0. <http://www.openstreetmap.org/copyright>
 -   Nominatim Usage Policy: <http://wiki.openstreetmap.org/wiki/Nominatim_usage_policy>
--   MapQuest Nominatim Terms of Use: <http://info.mapquest.com/terms-of-use/>
-
-### TODO
-
--   Enable configuration of timeout
--   Enable switching Nominatim API server providers
--   Better spatial support
 
 ### Installation
 
 ``` r
-devtools::install_github("hrbrmstr/nominatim")
+devtools::install_github("unwiredlabs/nominatim-library-r")
 ```
 
 ### Usage
@@ -235,7 +228,3 @@ test_dir("tests/")
 #> 
 #> DONE
 ```
-
-### Code of Conduct
-
-Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
